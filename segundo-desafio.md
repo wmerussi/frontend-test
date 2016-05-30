@@ -30,7 +30,7 @@ Você deverá validar os campos quando o cursor deixar o campo e quando o botão
 ##### E-mail
 - Deve seguir o formato padrão de email `xxx@xx.xx`  
 - Deve aceitar letras, números e os caracteres `@`, `.`, `-` e `_`
-- Não deve aceitar o restante de caracteres especiais.
+- Não pode aceitar o restante dos caracteres especiais.
 
 ## Lista de contatos
 
