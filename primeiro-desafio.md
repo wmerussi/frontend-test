@@ -10,9 +10,9 @@ IE9+, Chrome, Firefox
 A fonte utilizada no layout é a [Open sans](https://www.fontsquirrel.com/fonts/open-sans).
 Os tamanhos utilizados são:
 
-### Cabeçalho  
+## Cabeçalho  
 
-#### Logo
+### Logo
 **Sombra:**  
 - Horizontal lenght: 0
 - Vertical lenght: 0
@@ -21,7 +21,7 @@ Os tamanhos utilizados são:
 - Shadow color: #000000 
 - Opacity: 20
 
-#### Menu principal  
+### Menu principal  
 **Tipografia:**  
 - Peso: `Semibold`  
 - Tamanho: 16px  
@@ -30,14 +30,14 @@ Os tamanhos utilizados são:
 > Dolor
 > Consectetur  
 
-#### Botão  
+### Botão  
 **Tipografia:**  
 - Peso: `Bold`  
 - Tamanho: 16px  
 
 > Interdum
 
-#### Breadcrumb
+### Breadcrumb
 **Tipografia:**  
 - Peso: `Regular`  
 - Tamanho: 12px  
@@ -48,18 +48,18 @@ Os tamanhos utilizados são:
 > Varius felis sed
 
 
-### Conteúdo
-#### Submenu
+## Conteúdo
+### Submenu
 Este ítem é composto de títulos (sem url) e seus links (com url). Títulos que não contém nenhum item tem url
 
-##### Título principal:
+#### Título principal:
 **Tipografia:**  
 - Peso: `Regular`  
 - Tamanho: 16px  
 
 > Áestigulum
 
-##### Ítens submenu: 
+#### Ítens submenu: 
 **Tipografia:**  
 - Peso títulos: `Bold` 
 - Peso itens: `Regular`  
@@ -86,16 +86,16 @@ Este ítem é composto de títulos (sem url) e seus links (com url). Títulos qu
 > Erat egestas
 
 
-#### Conteúdo central
+### Conteúdo central
 
-##### Título principal:
+#### Título principal:
 **Tipografia:**  
 - Peso: `Light`  
 - Tamanho: 20px  
 
 > Suspendisse et
 
-#### Texto miolo
+### Texto miolo
 
 **Tipografia:**  
 - Peso: `Regular`  
@@ -105,34 +105,34 @@ Este ítem é composto de títulos (sem url) e seus links (com url). Títulos qu
 
 > Nam dui lacus, blandit sit amet aliquam at, lobortis ut mauris. Pellentesque scelerisque velit eu varius ultrices. Curabitur viverra, erat sit amet auctor suscipit, massa lectus dictum erat, imperdiet lobortis mauris diam nec lacus. Proin lacinia eros eget congue lacinia.
 
-#### Banner gato
+### Banner gato
 **Tipografia:**  
 - Peso: `Light`  
 - Tamanho: 20px  
 
 > Suspendisse et 
 
-#### Banner pães 
+### Banner pães 
 **Tipografia:**  
 - Peso: `Semibold`  
 - Tamanho: 16px  
 
 > Etiam sagittis nisi risus, vitae finibus ligula aliquam sit amet.
 
-#### Caixa sucesso
+### Caixa sucesso
 > Ùonec laoreet sem id vehicula vehicula.
 
-#### Caixa erro
+### Caixa erro
 > Mauris non congue justo, ut convallis purus. Vestibulum ligula.
 
-#### Caixa editar
+### Caixa editar
 > Morbi augue tellus, viverra vestibulum felis et, eleifend consectetur ipsum felis et, eleifend. 
 
 
-### Rodapé
-#### Menu 1 (esquerda)
+## Rodapé
+### Menu 1 (esquerda)
 
-##### Título principal
+#### Título principal
 **Tipografia:**  
 - Peso: `Regular`  
 - Tamanho: 20px  
@@ -140,14 +140,14 @@ Este ítem é composto de títulos (sem url) e seus links (com url). Títulos qu
 > Áuctor commod
 
 
-##### Subtítulo
+#### Subtítulo
 **Tipografia:**  
 - Peso: `Bold`  
 - Tamanho: 16px  
 
 > Consectetur
 
-##### Itens
+#### Itens
 **Tipografia:**  
 - Peso: `Regular`  
 - Tamanho: 13px  
@@ -161,14 +161,14 @@ Este ítem é composto de títulos (sem url) e seus links (com url). Títulos qu
 > Item 8
 > Lorem 9
 
-##### Link geral
+#### Link geral
 **Tipografia:**  
 - Peso: `Bold`  
 - Tamanho: 13px  
 
 > All things
 
-#### Menu 2 (esquerda)
+### Menu 2 (esquerda)
 
 Segue os mesmos padrões do menu 1
 
@@ -181,12 +181,12 @@ Segue os mesmos padrões do menu 1
 
 > All things
 
-#### Menu logos
+### Menu logos
 As imagens são links para sites externos
 
 > Pellentesque
 
-#### Menu institucional
+### Menu institucional
 **Tipografia:**  
 - Peso: `Semibold`  
 - Tamanho: 13px  
@@ -200,7 +200,7 @@ As imagens são links para sites externos
 > Tempus mauris a
 > Phasellus in
 
-#### Copyright
+### Copyright
 **Tipografia:**  
 - Peso: `Semibold`  
 - Tamanho: 13px  
