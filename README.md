@@ -31,6 +31,6 @@ No arquivo [segundo-desafio.md](./segundo-desafio.md) se encontram todos os dado
 - Pode seguir qualquer code standard/guide/style ou somente bom senso, mas seja consistente em sua decisão.
 - Somente é permitido o uso de JavaScript, jQuery ou AngularJS.
 - Não precisa aplicar nenhum layout, mas esperamos que o seu HTML seja no mínimo semântico e acessível.
-- Capriche no código, mas não exagere. A ideia é que você invista aproximadamente 1 hora nesta parte do teste.
+- Capriche no código. A ideia é que você invista aproximadamente 1 hora nesta parte do teste.
 
 *Boa sorte!*
