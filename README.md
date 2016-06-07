@@ -2,7 +2,8 @@
 Projeto de teste para seleção de candidatos(as) a desenvolvedor(a) Front-end na Amil.
 
 Este teste contém dois desafios:
-- O primeiro serve para avaliar seu **HTML**, **CSS**, semântica, boas práticas, etc. - O segundo para avaliar o seu **JavaScript**.
+- O primeiro serve para avaliar seu **HTML**, **CSS**, semântica, boas práticas, etc.  
+- O segundo para avaliar o seu **JavaScript**.  
 
 ## Instruções
 Faça um fork do projeto, realize seu teste e ao finalizar, solicite um pull request.
