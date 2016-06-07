@@ -2,7 +2,8 @@
 Projeto de teste para seleção de candidatos(as) a desenvolvedor(a) Front-end na Amil.
 
 Este teste contém dois desafios:
-- O primeiro serve para avaliar seu **HTML**, **CSS**, semântica, boas práticas, etc. - O segundo para avaliar o seu **JavaScript**.
+- O primeiro serve para avaliar seu **HTML**, **CSS**, semântica, boas práticas, etc.  
+- O segundo para avaliar o seu **JavaScript**.  
 
 ## Instruções
 Faça um fork do projeto, realize seu teste e ao finalizar, solicite um pull request.
@@ -20,8 +21,8 @@ No arquivo [primeiro-desafio.md](./primeiro-desafio.md) se encontram todos os da
 - Não tenha pressa! Iremos avaliar a qualidade do seu código. Faça seu melhor!.
 
 ## Desafio n° 2
-1.- Criar um formulário com 3 campos para cadastro de contatos 
-2.- Mostrar os contatos cadastrados em uma lista na mesma página
+1.- Criar um formulário com 3 campos para cadastro de contatos   
+2.- Mostrar os contatos cadastrados em uma lista na mesma página  
 
 No arquivo [segundo-desafio.md](./segundo-desafio.md) se encontram todos os dados e regras necessárias para que possa fazer esta parte do teste.
 
