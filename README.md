@@ -8,7 +8,7 @@ Este teste contém dois desafios:
 Faça um fork do projeto, realize seu teste e ao finalizar, solicite um pull request.
 
 ## Desafio n° 1
-1.- Criar o HTML/CSS de acordo com o layout base fornecido no diretório [layouts](./layouts).
+1.- Criar o HTML/CSS de acordo com o layout base fornecido no diretório [layout](./layout).
 
 No arquivo [primeiro-desafio.md](./primeiro-desafio.md) se encontram todos os dados necessários para que você possa fazer esta parte do teste.
 
