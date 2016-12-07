@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+
+      <meta charset="UTF-8" />
+      <title>Segundo Desafio</title>
+
+      <style>
+
+         body {margin: 0; padding: 0;}
+
+         h2 {text-align: center; padding: 20px 0; margin: 0 0 20px;}
+
+         form {text-align: center; width: 50%; margin: 0 auto; background-color: #eee; padding: 10px;}
+         .row {display: flex; justify-content: space-around;}
+
+         .buttons {margin-top: 20px;}
+         .button {width: 48%; background-color: #20b7ce; padding: 10px 0; border-radius: 5px; cursor: pointer; text-transform: uppercase;}
+         .button:hover {color: #fff;}
+
+         form h4 {margin: 0;}
+         form input {margin: 0;}
+
+         .list {width: 50%; margin: 20px auto 0; padding-top: 20px; border-top: 1px solid #c9c9c9;}
+         .list h4 {text-align: center; margin: 0 0 20px;}
+         .entry {margin-bottom: 30px;}
+         .entry .name {text-transform: capitalize; font-weight: bold;}
+
+         .error {margin: 0; color: red;}
+         .general-error {margin: 10px 0;}
+         .success {margin: 10px 0; color: green;}
+         
+      </style>
+
+   </head>
+
+   <body>
+
+      <h2>Cadastro</h2>
+      
+      <form action="">
+         
+         <div class="row">
+            <div class="field">
+               <h4>Nome</h4>
+               <input type="text" id="nome" name="nome" />
+               <p class="error nome-error">&nbsp;</p>
+            </div> <!--  .field -->
+
+            <div class="field">
+               <h4>Telefone</h4>
+               <input type="text" id="telefone" name="telefone" mask="telefone" />
+               <p class="error telefone-error">&nbsp;</p>
+            </div> <!--  .field -->
+
+            <div class="field">
+               <h4>E-mail</h4>
+               <input type="text" id="email" name="email" />
+               <p class="error email-error">&nbsp;</p>
+            </div> <!--  .field -->
+         </div> <!--  .row -->
+
+         <div class="buttons row">
+            <div class="button save-button">Salvar</div> <!--  .button -->
+            <div class="button cancel-button">Cancelar</div> <!--  .button -->
+         </div> <!--  .row -->
+
+         <p class="error general-error"></p> <!--  .error -->
+         <p class="success"></p> <!--  .error -->
+
+      </form>
+
+      <div class="list">
+
+         <h4>Contatos cadastrados</h4>
+
+      </div> <!--  .list -->
+
+
+ 
+
+   </body>
+
+   <script src="libs/jQuery/jquery-3.1.1.min.js"></script>
+   <script src="libs/Inputmask-3.x/dist/min/jquery.inputmask.bundle.min.js"></script>
+
+   <script>
+      /***** Phone Mask *****/
+      $('input[mask="telefone"]').inputmask({
+        mask: ['(99) 9999-9999', '(99) 99999-9999', ],
+        keepStatic: true
+      });
+
+      /***** Validate everytime the mouse leaves the input field, when the focus is lost and the key is released *****/
+      $('form input').bind('mouseout keyup focusout', function()
+      {
+         var field = $(this).attr('id');
+         validation(field);
+      });
+
+      /***** Save Button *****/
+      $('.save-button').on('click', function()
+      {
+         // If the validation of all fields passes, insert the data
+         if(validation('nome') && validation('telefone') && validation('email'))
+         {
+            // Adds the data to the list
+            $('.list').append('<div class="entry">\
+               <div class="name">**' + $('form input#nome').val() + '** </div>\
+               <div class="contacts">' + $('form input#telefone').val() + ' - ' + $('form input#email').val() + ' </div>\
+               </div>\
+            ');
+
+            // Reset fields
+            $('input').val('');
+
+            // Display a success message
+            $('.general-error').text('');
+            $('.success').text('Dados inseridos!');
+         }
+         else
+         {
+            // Inform that a field has errors
+            $('.success').text('');
+            $('.general-error').text('Dados incorretos');
+         }
+      });
+
+      /***** Cancel Button *****/
+      $('.cancel-button').on('click', function()
+      {
+         // Reset fields
+         $('input').val('');
+
+         // Reset errors
+         $('.error').html('&nbsp;');
+         $('.general-error').text('');
+         $('.success').text('');
+      });
+
+      /****** When enter is pressed, insert the data ******/
+      $(document).keypress(function(e)
+      {
+         if(e.which == 13) {
+            $('.save-button').click();
+         }
+      });
+
+      /***** Function to validate the data *****/
+      function validation(field)
+      {
+         var inputLength = $('input#' + field).val();
+
+         // Checks if the field is not empty
+         if(inputLength.length > 0)
+         {
+            $('.' + field + '-error').html('&nbsp;');
+         }
+         else
+         {
+            $('.' + field + '-error').text('Campo obrigatório');
+            return false;
+         }
+
+         var value = $('input#' + field).val();
+
+         // Check the name of the field and validate it with a regex expression
+         switch (field)
+         {
+            case 'nome':
+               var regex = new RegExp('^[a-zA-ZÀÁÂÃÄÅàáâãäåÒÓÔÕÖØòóôõöøÈÉÊËèéêëÇçÌÍÎÏìíîïÙÚÛÜùúûüÿÑñ ]*$');
+
+               if (!regex.test(value))
+               {
+                  $('.nome-error').text('Nome inválido');
+                  return false;
+               }
+               
+               break;
+
+            case 'telefone':
+               var regex = new RegExp('^[0-9]{10,11}$');
+               value = value.replace(/[\(\)\-\s]+/g, '');
+
+               if (!regex.test(value))
+               {
+                  $('.telefone-error').text('Telefone inválido');
+                  return false;
+               }
+               
+               break;
+
+            case 'email':
+               var regex = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+
+               if (!regex.test(value))
+               {
+                  $('.email-error').text('E-mail inválido');
+                  return false;
+               }
+               
+               break;
+
+            default:
+               return false;
+               break;
+         }
+
+         // Validation passes
+         $('.' + field + '-error').html('&nbsp;');
+         return true;
+      }
+
+   </script>
+
+</html>

@@ -93,7 +93,7 @@ Este ítem é composto de títulos (sem url) e seus links (com url). Títulos qu
 - Peso: `Light`  
 - Tamanho: 20px  
 
-> Suspendisse et
+> Étiam enim massa
 
 ### Texto miolo
 
