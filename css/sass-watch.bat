@@ -1,0 +1,1 @@
+start cmd.exe /k "sass --watch main.sass:main.css"

@@ -1,0 +1,29 @@
+// To be able to change the colour of the svg, we need to use it as a mask
+// It's not possible to place the identical properties in a single statement
+
+.box-success-image
+  display: inline-block
+  margin-top: 16px
+
+  -webkit-mask: url(../svgs/sucesso.svg) no-repeat 50% 50%
+  mask: url(../svgs/sucesso.svg) no-repeat 50% 50%
+  -webkit-mask-size: cover
+  mask-size: cover
+
+.box-error-image
+  display: inline-block
+  margin-top: 16px
+
+  -webkit-mask: url(../svgs/erro.svg) no-repeat 50% 50%
+  mask: url(../svgs/erro.svg) no-repeat 50% 50%
+  -webkit-mask-size: cover
+  mask-size: cover
+
+.box-edit-image
+  display: inline-block
+
+  -webkit-mask: url(../svgs/editar.svg) no-repeat 50% 50%
+  mask: url(../svgs/editar.svg) no-repeat 50% 50%
+  -webkit-mask-size: cover
+  mask-size: cover
+

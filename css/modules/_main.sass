@@ -1,0 +1,134 @@
+.main-wrapper
+   padding-bottom: 80px
+   
+   .main
+
+      // Left menu
+      .submenu
+         padding: 16px
+         border: 1px solid #c9c9c9
+         border-radius: 1px
+
+         .title
+            padding-bottom: 10px
+            color: #f7941e
+            border-bottom: 1px solid #c9c9c9
+
+         ul
+            font-size: 14px
+
+            .subtitle
+               margin-top: 20px
+               color: #20b7ce
+               font-family: open_sansbold, Arial, sans-serif
+
+            .title-arrow
+               position: relative
+               margin-right: 15px
+
+               &:after
+                  content: " "
+                  position: absolute
+                  top: 50%
+                  left: 0
+                  transform: translateY(-50%)
+                  width: 0
+                  height: 0
+                  border-top: 5px solid transparent
+                  border-bottom: 5px solid transparent
+                  border-left: 10px solid #f7941e
+
+            ul li
+               margin-top: 10px
+
+      // Right div with the content
+      .content
+
+         .text-wrapper
+            
+            .title
+               margin-bottom: 20px
+               padding-bottom: 20px
+               color: #ec007a
+               font-family: open_sanslight, Arial, sans-serif
+               font-size: 20px
+               border-bottom: 1px solid #c9c9c9
+
+            .text-wrapper-left .text p:last-child
+               margin-bottom: 0
+
+            .text-wrapper-right
+
+               .image
+
+                  img
+                     // Width 100% to take the same size as the image above it
+                     width: 100%
+                     border-radius: 10px
+
+         .main-banner-wrapper
+            margin: 40px 0
+            font-family: open_sanssemibold, Arial, sans-serif
+
+            .banner
+               position: relative
+               text-align: center
+
+               width: 100%
+               height: 200px
+               background: url('../imagens/food-700x200.jpg') no-repeat 50% 50%
+               background-size: cover
+
+               // The position is absolute to make it over the banner
+               .banner-text
+                  position: absolute
+                  bottom: 0
+                  left: 0
+                  width: 100%
+                  background-color: rgba(0,0,0, 0.5)
+
+                  p
+                     margin: 0
+                     padding: 10px 0
+                     color: #fff
+
+         .boxes
+            display: flex
+            align-items: stretch
+
+            text-align: center
+            font-size: 14px
+
+            // Target all the box inside .boxes
+            [class$="-box"]
+               padding: 0 20px
+               height: 100%
+
+            // Target all the images inside .boxes
+            [class$="-image"]
+               width: 50px
+               height: 50px
+               background-color: #ec007a
+
+            .col
+               border: 1px solid #f7941e
+
+            .circle
+               position: relative
+               margin: 16px auto 0
+               width: 44px
+               height: 44px
+               border: 3px solid #ec007a
+               border-radius: 50%
+
+               // The image has to be scale so it can fit insede the circle
+               .box-edit-image
+                  position: absolute
+                  top: 50%
+                  left: 50%
+                  transform: translate(-50%, -50%)
+                  width: 60%
+                  height: 60%
+
+            p
+               margin: 16px 0

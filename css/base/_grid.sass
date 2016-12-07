@@ -1,0 +1,93 @@
+.row
+
+  // Clearfix after rows
+  &:after
+    display: table
+    content: " "
+    clear: both
+
+  // Float left all columns and place a gap after it
+  .col
+    float: left
+    margin-right: $gap
+
+    // The last child needs to have no right-margin
+    &:last-child
+      margin-right: 0
+
+// All the columns configurations based on variables informed in css/base/_variables.sass
+.col-12
+  width: $column*12 + $gap*11
+
+.col-11
+  width: $column*11 + $gap*10
+
+.col-10
+  width: $column*10 + $gap*9
+
+.col-9
+  width: $column*9 + $gap*8
+
+.col-8
+  width: $column*8 + $gap*7
+
+.col-7
+  width: $column*7 + $gap*6
+
+.col-6
+  width: $column*6 + $gap*5
+
+.col-5
+  width: $column*5 + $gap*4
+
+.col-4
+  width: $column*4 + $gap*3
+
+.col-3
+  width: $column*3 + $gap*2
+
+.col-2
+  width: $column*2 + $gap*1
+
+.col-1
+  width: $column*1
+
+// Offset options to leave some columns and gaps to the left
+.col-offset-12
+  margin-left: 100%
+
+.col-offset-11
+  margin-left: $column*11 + $gap*11
+
+.col-offset-10
+  margin-left: $column*10 + $gap*10
+
+.col-offset-9
+  margin-left: $column*9 + $gap*9
+
+.col-offset-8
+  margin-left: $column*8 + $gap*8
+
+.col-offset-7
+  margin-left: $column*7 + $gap*7
+
+.col-offset-6
+  margin-left: $column*6 + $gap*6
+
+.col-offset-5
+  margin-left: $column*5 + $gap*5
+
+.col-offset-4
+  margin-left: $column*4 + $gap*4
+
+.col-offset-3
+  margin-left: $column*3 + $gap*3
+
+.col-offset-2
+  margin-left: $column*2 + $gap*2
+
+.col-offset-1
+  margin-left: $column*1 + $gap*1
+
+.col-offset-0
+  margin-left: 0%
